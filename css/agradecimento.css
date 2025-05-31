@@ -1,0 +1,43 @@
+body {
+    background-color: #0A0A0A; /* Preto */
+    color: #FFFFFF; /* Branco */
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+.thank-you-container {
+    background-color: #3D348B; /* Roxo escuro */
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #00F5FF; /* Neon Blue */
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #FFFFFF; /* Branco */
+}
+
+a {
+    color: #00F5FF; /* Neon Blue */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+}

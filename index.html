@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Site oficial da PixelForge Studios. Descubra nossos jogos, assista trailers e entre em contato conosco!" />
+  <title>PixelForge Studios</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="icon" href="assets/img/favicon.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <script defer src="js/index.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+        <nav class="nav fade-in">
+          <ul>
+            <li><a href="#home" data-i18n="menu_inicio">Início</a></li>
+            <li><a href="#games" data-i18n="menu_jogos">Jogos</a></li>
+            <li><a href="#trailer" data-i18n="menu_trailer">Trailer</a></li>
+            <li><a href="#community" data-i18n="menu_comunidade">Comunidade</a></li>
+            <li><a href="#contact" data-i18n="menu_contato">Contato</a></li>
+            <li><a href="#about" data-i18n="menu_sobre">Sobre Nós</a></li>
+          </ul>
+        </nav>
+
+        <div class="language-switch-social">
+          <div class="social-icons-header">
+            <a href="https://www.youtube.com/SeuCanal" target="_blank" rel="noopener" aria-label="YouTube" class="social-link pixel-art">
+              <img src="assets/img/youtubelogo.png" alt="YouTube" />
+            </a>
+            <a href="https://www.instagram.com/seuusuario" target="_blank" rel="noopener" aria-label="Instagram" class="social-link pixel-art">
+              <img src="assets/img/instagramlogo.png" alt="Instagram" />
+            </a>
+          </div>
+
+          <div class="language-switch">
+            <img src="https://flagcdn.com/w40/br.png" alt="Português" onclick="setLanguage('pt')" class="flag" />
+            <img src="https://flagcdn.com/w40/us.png" alt="English" onclick="setLanguage('en')" class="flag" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1 data-i18n="bem_vindo">Bem-vindo à PixelForge Studios</h1>
+      <p data-i18n="slogan">Forjando mundos. Moldando histórias.</p>
+      <div class="logo-container">
+        <img src="assets/img/Logo-PixelForge.png" alt="PixelForge Studios" class="hero-logo" />
+        <div class="sparks"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="games">
+    <div class="container">
+      <h2 data-i18n="jogos_destaque">Jogos em Destaque</h2>
+      <div class="game-grid">
+        <div class="game-card">
+          <img src="assets/img/Jogo1.jpeg" alt="Shadows of Eternity" />
+          <h3>Shadows of Eternity</h3>
+          <p data-i18n="descricao_jogo1">Explore um mundo sombrio e mágico.</p>
+        </div>
+        <div class="game-card">
+          <img src="assets/img/Jogo2.jpeg" alt="Cyber Wraith" />
+          <h3>Cyber Wraith</h3>
+          <p data-i18n="descricao_jogo2">Hackers, neon e vingança cibernética.</p>
+        </div>
+        <div class="game-card">
+          <img src="assets/img/Jogo3.jpeg" alt="Galactic Siege" />
+          <h3>Galactic Siege</h3>
+          <p data-i18n="descricao_jogo3">Estratégia | Domine a galáxia com sua frota.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   <section id="trailer" class="trailer"> 
+  <div class="container">
+    <h2 data-i18n="trailer_destaque">Trailer em Destaque</h2>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/UWTlbnjYztw" 
+        title="Trailer Fictício" 
+        allowfullscreen 
+        frameborder="0"
+      ></iframe>
+    </div>
+  </div>
+</section>
+
+  <section id="community" class="community">
+    <div class="container">
+      <h2 data-i18n="depoimentos">Depoimentos da Comunidade</h2>
+      <div class="testimonials">
+        <blockquote data-i18n="depoimento1">"O melhor RPG indie que já joguei!" — @gamerbruno</blockquote>
+        <blockquote data-i18n="depoimento2">"Cyber Wraith é pura adrenalina. Mal posso esperar pela continuação!" — @cyberqueen</blockquote>
+        <blockquote data-i18n="depoimento3">"PixelForge acerta de novo! Incrível qualidade para um estúdio pequeno." — @spacefanatic</blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 data-i18n="fale_conosco">Fale Conosco</h2>
+      <form action="https://formsubmit.co/pixelforgestudioscontato@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Seu nome" required data-i18n-placeholder="input_nome" />
+        <input type="email" name="email" placeholder="Seu e-mail" required data-i18n-placeholder="input_email" />
+        <textarea name="message" placeholder="Sua mensagem..." rows="5" required data-i18n-placeholder="input_mensagem"></textarea>
+        <input type="hidden" name="_subject" value="Nova mensagem do site PixelForge Studios!" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="agradecimento.html" />
+        <input type="text" name="_honey" style="display:none" />
+        <button type="submit" data-i18n="enviar">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2 data-i18n="sobre_nos">Sobre Nós</h2>
+      <p data-i18n="descricao_sobre">
+        Na PixelForge Studios, somos apaixonados por criar experiências imersivas que combinam arte pixelada com narrativas envolventes. Fundada em 2015, nossa missão é forjar mundos únicos e inesquecíveis para jogadores ao redor do mundo.
+      </p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 PixelForge Studios. <span data-i18n="direitos">Todos os direitos reservados.</span></p>
+    </div>
+  </footer>
+</body>
+
+</html>
